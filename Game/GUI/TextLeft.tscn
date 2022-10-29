@@ -1,0 +1,58 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Assets/GUI/TextLeft.png" type="Texture" id=1]
+[ext_resource path="res://Assets/GUI/SelectedArrow.png" type="Texture" id=2]
+[ext_resource path="res://Assets/GUI/DefaultArrow.png" type="Texture" id=3]
+[ext_resource path="res://Fonts/Abel-Regular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Game/Scripts/TextLeft.gd" type="Script" id=5]
+[ext_resource path="res://Assets/GUI/Audio.png" type="Texture" id=6]
+[ext_resource path="res://Assets/GUI/Mute.png" type="Texture" id=7]
+[ext_resource path="res://Assets/GUI/MusicOn.png" type="Texture" id=8]
+[ext_resource path="res://Assets/GUI/MusicOff.png" type="Texture" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 57
+font_data = ExtResource( 4 )
+
+[node name="TextLeft" type="TextureRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+script = ExtResource( 5 )
+
+[node name="NextButton" type="TouchScreenButton" parent="."]
+position = Vector2( 763, 837 )
+scale = Vector2( 1.51, 1.51 )
+normal = ExtResource( 3 )
+pressed = ExtResource( 2 )
+
+[node name="Dialogue" type="Label" parent="."]
+margin_left = 200.0
+margin_top = 134.0
+margin_right = 912.0
+margin_bottom = 750.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+autowrap = true
+
+[node name="MusicButton" type="TextureButton" parent="."]
+margin_left = 569.0
+margin_top = 874.0
+margin_right = 665.0
+margin_bottom = 970.0
+toggle_mode = true
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+
+[node name="SoundButton" type="TextureButton" parent="."]
+margin_left = 433.0
+margin_top = 874.0
+margin_right = 529.0
+margin_bottom = 970.0
+toggle_mode = true
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+
+[connection signal="pressed" from="MusicButton" to="." method="_on_pressed_audio" binds= [ "Music" ]]
+[connection signal="pressed" from="SoundButton" to="." method="_on_pressed_audio" binds= [ "Sound" ]]
