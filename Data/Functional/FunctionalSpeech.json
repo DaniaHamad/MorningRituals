@@ -1,0 +1,34 @@
+{
+    "HealthyChill":[
+       "Carla eats healthy with some snacks here and there. Thanks to spending every morning checking her mobile and TV, she would open conversations with her coworkers about the news, trends, or anything that has some shock value, she networks with her hire-ups and earned herself a promotion.",
+       "Functional Human Ending - Healthy Chill"
+    ],
+    "HealthySleep":[
+        "Carla doesn’t wake up early but always eats a healthy breakfast. She goes to work and finishes the assigned tasks every day.",
+       "Functional Human Ending - Healthy Sleep" 
+    ],
+    "HealthyAlcohol":[
+        "Carla drinks wine but balances it with healthy food every morning so that the drinking doesn’t have any effect on her body. She goes to work and finishes the assigned tasks every day.",
+        "Functional Human Ending - Healthy Alcohol"
+    ],
+    "UnhealthyRunning":[
+        "Carla loves food; she eats anything that she craves and most of it is unhealthy, but she always goes for a run every morning to avoid gaining a lot of weight. She goes to work and finishes the assigned tasks every day.",
+        "Functional Human Ending - Unhealthy Running"
+    ],
+    "UnhealthySleep":[
+        "Carla doesn’t wake up early, but always makes sure to have something to eat before going to work, it might not be a healthy breakfast, but it gives her the energy to do her assigned tasks every day.",
+        "Functional Human Ending - Unhealthy Sleep"
+    ],
+    "SkipChill":[
+        "Carla’s breakfast is snacks but that doesn’t affect her. Thanks to spending every morning checking her mobile and TV, she would open conversations with her coworkers about the news, trends, or anything that has some shock value, she networks with her hire-ups and earned herself a promotion.",
+        "Functional Human Ending - Skip Chill"
+    ],
+    "SkipSleep":[
+        "Carla doesn’t wake up early and doesn’t eat breakfast, but that doesn’t affect her. She goes to work and finishes the assigned tasks every day. ",
+        "Functional Human Ending - Skip Sleep"
+    ],
+    "AlcoholRunning":[
+        "Carla drinks wine but balances it by running and sweating it off every morning so that the drinking doesn’t have any effect on her body. She goes to work and finishes the assigned tasks every day.",
+        "Functional Human Ending - Alcohol Running"
+    ]
+}

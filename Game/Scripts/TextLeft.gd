@@ -1,4 +1,4 @@
-extends TextureRect
+extends Control
 
 onready var dialogue = $Dialogue
 onready var musicButton = $MusicButton

@@ -3,38 +3,37 @@ extends Control
 onready var cg = $CG
 onready var textLeft = $TextLeft
 onready var mainmenuButton = $MainMenuButton
+onready var nextButton = $TextLeft/NextButton
 onready var bathroomMirrorReflection = $BathroomMirrorReflection
 
-var checkCounter=0
-var alcoholSpeach=[]
-var anorexicSpeach=[]
-var fatSpeach=[]
-var speach=[]
-var cgs
+var checkCount=0
+var speech=[]
+var cgs = []
+var speechData
 
 func _ready():
-	match  RouteBuilder.route:
-		"AlcoholAlcohol":
-			speach= alcoholSpeach
-			bathroomMirrorReflection.texture = load("res://Assets/bathroomMirrorAlcoholic.png")
-		"SkipRunning":
-			speach = anorexicSpeach
-			bathroomMirrorReflection.texture = load("res://Assets/bathroomMirrorAnorexia.png")
-		"UnhealthyChill":
-			speach = fatSpeach
-			bathroomMirrorReflection.texture = load("res://Assets/bathroomMirrorFat.png")
-	textLeft.get_node("Dialogue").text="Unhealthy Ending - "+RouteBuilder.route
+	var speechDatafile= File.new()
+	speechDatafile.open ( "res://Data/Unhealthy/UnhealthySpeech.json" , File.READ )
+	var speechDatajson= JSON.parse ( speechDatafile.get_as_text())
 	
+	speechData=speechDatajson.result
+	speechDatafile.close()
+	speech = speechData[RouteBuilder.route]["speech"]
+	cgs = speechData [RouteBuilder.route]["cgs"]
+	bathroomMirrorReflection.texture = load("res://Assets/"+cgs[0])
+	textLeft.set_text(speech,checkCount)
+	checkCount+=1
 
 
 
 func _on_NextButton_pressed():
-	if !textLeft.set_text(speach,checkCounter):
+	if !textLeft.set_text(speech,checkCount):
 		yield(get_tree().create_timer(.5),"timeout")
 		mainmenuButton.show()
+		nextButton.hide()
 		
 	else:
-		checkCounter+=1
+		checkCount+=1
 
 
 func _on_MainMenuButton_pressed():

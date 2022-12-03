@@ -55,10 +55,10 @@ texture = ExtResource( 2 )
 
 [node name="MainMenuButton" type="Button" parent="."]
 visible = false
-margin_left = 673.0
-margin_top = 837.0
-margin_right = 962.0
-margin_bottom = 975.0
+margin_left = 672.0
+margin_top = 880.0
+margin_right = 961.0
+margin_bottom = 1018.0
 custom_fonts/font = SubResource( 1 )
 custom_styles/hover = SubResource( 2 )
 custom_styles/pressed = SubResource( 3 )

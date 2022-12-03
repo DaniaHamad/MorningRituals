@@ -3,41 +3,40 @@ extends Control
 onready var cg = $CG
 onready var textLeft = $TextLeft
 
-var runningSpeach=["Carla then wears her sport outfit and slips into running shoes and off she goes, running inside a nearby park for a lab or two, it helps clear her mind every day.",
+var runningSpeech=["Carla then wears her sport outfit and slips into running shoes and off she goes, running inside a nearby park for a lab or two, it helps clear her mind every day.",
 ]
-var chillSpeach=["Carla is too young to be that stressed, she utilizes the morning by checking her social media; and watching TV shows and news while eating some snacks.",
+var chillSpeech=["Carla is too young to be that stressed, she utilizes the morning by checking her social media; and watching TV shows and news while eating some snacks.",
 ]
-var sleepSpeach=["Carla always goes back to sleep because sleeping is the best feeling in the world, sleeping extra hours helps her focus on her job.",]
-var alcoholSpeach=["Carla needs something to help her reduce her stress level before going to work, which is a glass of wine. She likes wine very much.",
+var sleepSpeech=["Carla always goes back to sleep because sleeping is the best feeling in the world, sleeping extra hours helps her focus on her job.",]
+var alcoholSpeech=["Carla needs something to help her reduce her stress level before going to work, which is a glass of wine. She likes wine very much.",
 ]
 
 
 var checkCounter=0
-var speach
-var cgs
+var speech
 
 func _ready():
 	cg.texture=load("res://Assets/activity"+RouteBuilder.activity+".png")
 	match RouteBuilder.activity:
 		"Running":
-			speach = runningSpeach
+			speech = runningSpeech
 
 		"Chill":
-			speach = chillSpeach
+			speech = chillSpeech
 
 		"Sleep":
-			speach = sleepSpeach
+			speech = sleepSpeech
 		"Alcohol":
-			speach = alcoholSpeach
+			speech = alcoholSpeech
 
 		
-	textLeft.set_text(speach,checkCounter)
+	textLeft.set_text(speech,checkCounter)
 	checkCounter+=1
 
 
 
 func _on_NextButton_pressed():
-	if !textLeft.set_text(speach,checkCounter):
+	if !textLeft.set_text(speech,checkCounter):
 		match RouteBuilder.route:
 			"HealthyRunning":
 				get_tree().change_scene("res://Game/Scenes/HealthyEnd.tscn")

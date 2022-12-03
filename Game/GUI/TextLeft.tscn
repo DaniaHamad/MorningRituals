@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Assets/GUI/TextLeft.png" type="Texture" id=1]
+[ext_resource path="res://Assets/GUI/TextField.png" type="Texture" id=1]
 [ext_resource path="res://Assets/GUI/SelectedArrow.png" type="Texture" id=2]
 [ext_resource path="res://Assets/GUI/DefaultArrow.png" type="Texture" id=3]
 [ext_resource path="res://Fonts/Abel-Regular.ttf" type="DynamicFontData" id=4]
@@ -14,42 +14,47 @@
 size = 57
 font_data = ExtResource( 4 )
 
-[node name="TextLeft" type="TextureRect"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-texture = ExtResource( 1 )
-expand = true
+[node name="TextLeft" type="Control"]
+margin_bottom = 8.0
 script = ExtResource( 5 )
 
+[node name="TextField" type="TextureRect" parent="."]
+margin_left = 152.0
+margin_top = 32.0
+margin_right = 959.0
+margin_bottom = 864.0
+texture = ExtResource( 1 )
+expand = true
+
 [node name="NextButton" type="TouchScreenButton" parent="."]
-position = Vector2( 763, 837 )
+position = Vector2( 762, 872 )
 scale = Vector2( 1.51, 1.51 )
 normal = ExtResource( 3 )
 pressed = ExtResource( 2 )
 
 [node name="Dialogue" type="Label" parent="."]
 margin_left = 200.0
-margin_top = 134.0
-margin_right = 912.0
-margin_bottom = 750.0
+margin_top = 80.0
+margin_right = 944.0
+margin_bottom = 696.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
 autowrap = true
 
 [node name="MusicButton" type="TextureButton" parent="."]
-margin_left = 569.0
-margin_top = 874.0
-margin_right = 665.0
-margin_bottom = 970.0
+margin_left = 568.0
+margin_top = 909.0
+margin_right = 664.0
+margin_bottom = 1005.0
 toggle_mode = true
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 
 [node name="SoundButton" type="TextureButton" parent="."]
-margin_left = 433.0
-margin_top = 874.0
-margin_right = 529.0
-margin_bottom = 970.0
+margin_left = 432.0
+margin_top = 909.0
+margin_right = 528.0
+margin_bottom = 1005.0
 toggle_mode = true
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 7 )

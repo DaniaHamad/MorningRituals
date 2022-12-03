@@ -3,14 +3,23 @@ extends Control
 onready var cg = $CG
 onready var textLeft = $TextLeft
 onready var mainmenuButton = $MainMenuButton
+onready var nextButton = $TextLeft/NextButton
 
-var checkCounter=0
-var speach=[]
+var speechData
+var checkCount=0
+var speech=[]
 var cgs
-
+#"UnhealthyAlcohol","SkipAlcohol","AlcoholChill","AlcoholSleep"
 func _ready():
-	textLeft.get_node("Dialogue").text="Non-Functional Human Ending - "+RouteBuilder.route
+	var speechDatafile= File.new()
+	speechDatafile.open ( "res://Data/NonFunctional/NonFunctionalspeech.json" , File.READ )
+	var speechDatajson= JSON.parse ( speechDatafile.get_as_text())
 	
+	speechData=speechDatajson.result
+	speechDatafile.close()
+	speech=speechData[RouteBuilder.route]
+	textLeft.set_text(speech,checkCount)
+	checkCount+=1
 
 func _on_MainMenuButton_pressed():
 	RouteBuilder.resetRoute()
@@ -18,9 +27,10 @@ func _on_MainMenuButton_pressed():
 
 
 func _on_NextButton_pressed():
-	if !textLeft.set_text(speach,checkCounter):
+	if !textLeft.set_text(speech,checkCount):
 		yield(get_tree().create_timer(.5),"timeout")
 		mainmenuButton.show()
+		nextButton.hide()
 		
 	else:
-		checkCounter+=1
+		checkCount+=1
