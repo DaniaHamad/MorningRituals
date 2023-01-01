@@ -6,7 +6,7 @@ onready var mainmenuButton = $MainMenuButton
 onready var nextButton = $TextLeft/NextButton
 
 var checkCount=0
-var speech = ["A healthy body comes with a healthy mind! Carla has been eating healthy and exercising every day, her mind is more focused and clearer, her body is strong and healthy when at work she would finish the job fast and efficiently which leads to her always being the employee of the month!",
+var speech = ["A healthy body comes with a healthy mind! Carla has been eating healthy and exercising every day, her mind is more focused and clearer, her body is strong and healthy! When at work she would finish the job fast and efficiently which leads her to always being the employee of the month!",
 "While she was running, she ran into a girl named Sara, they quickly became friends and running buddies! Carla and Sara would often visit each other and cook healthy food together. Carla has never been this happy in a long time.",
 "The End – Healthy",]
 var cgs

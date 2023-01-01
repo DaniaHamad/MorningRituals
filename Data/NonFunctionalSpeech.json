@@ -1,0 +1,81 @@
+{
+    "HealthyAlcohol":{
+        "cgs":[""],
+        "speech":[
+        "Carla read somewhere online that drinking a glass of wine with a balanced healthy breakfast every day will give her health benefits such as reducing the risk of heart disease and certain types of cancer. ",
+        "However, all she sees is her coming to work semi-drunk struggling to do her assigned tasks. No matter how many carrots or lettuce she eats, it won’t top the alcohol dependency that she is slowly building it.",
+        "Non-Functional Human Ending - Healthy Alcohol"]
+    },
+    
+    "UnhealthyAlcohol":{
+        "cgs":[""],
+        "speech":[
+        "Carla’s combination of drinking wine and eating junk food maybe isn’t a good idea for a morning routine. She’s struggling to do the assigned tasks because of her being semi-drunk every time she goes to work.",
+       "Also gained a bit of weight on top of it and may risk of having high blood pressure and heart disease.",
+       "Non-Functional Human Ending - Unhealthy Alcohol" ]
+    },
+    "UnhealthyRunning":{
+        "cgs":[""],
+        "speech":[
+        "Carla loves food; she eats anything that she craves and most of it is unhealthy, but she always goes for a run every morning to avoid gaining a lot of weight.",
+        "But due to having large unhealthy meals before going to exercise, it lead her having gastrointestinal issues.",
+        "Non-Functional Human Ending - Unhealthy Running"]
+    },
+    "UnhealthySleep":{
+        "cgs":[""],
+        "speech":[
+        "Carla doesn’t wake up early, but always makes sure to have something to eat before going to work, it might not be a healthy breakfast, but it gives her the energy to do her assigned tasks every day.",
+        "Or as she thought, as the days came by, she felt more and more tired. She started to sleep more and more that she sometimes comes to work 2 hours late!",
+        "Also, she gained a bit of weight because of her poor meal choices and not doing any physical activities, just sleep, eat, sleep.",
+        "Non-Functional Human Ending - Unhealthy Sleep"]
+    },
+    "SkipChill":{
+        "cgs":[""],
+        "speech":[
+        "Carla’s breakfast has only been snacks. At first, she was doing fine, doing her tasks as always. But later down on the road, she started to feel her energy getting lower and lower which made her not properly communicate with her coworkers.",
+        "As well as not being able to focus on the given tasks. Also noticed some weight loss due to snacks not being enough for her body.",
+        "And to top it off, she is suffering from lack of nutrients that she needs to function properly. The only thing Carla can do now days is to mindlessly watch TV while eating her favorite snacks.",
+        "Non-Functional Human Ending - Skip Chill"]
+    },
+    "SkipSleep":{
+        "cgs":[""],
+        "speech":[
+        "Carla doesn’t wake up early and doesn’t eat breakfast. She barely has the energy to get out of bed.",
+        "She always feels fatigued and can’t muster the energy to do her assigned tasks. All she wants is to keep sleeping because it’s the best feeling in the whole world.",
+        "Non-Functional Human Ending - Skip Sleep"]
+    },
+    "SkipAlcohol":{
+        "cgs":[""],
+        "speech":[
+        "Drinking wine on an empty stomach isn’t a good idea for a morning routine. Without any food inside her stomach, she increases the rate at which it is absorbed into her bloodstream, leading to more rapid and pronounced effects.",
+        "She faced number of effects during work such as drowsiness and fatigue and altered mood.",
+        "Her coworkers noticed her odd behaviors and her boss is well aware of her because she showed very poor performance while doing her tasks and her inability to properly communicate with anyone.",
+        "And drinking wine on an empty stomach also lead her to have gastrointestinal issues which added more to her misery.",
+        "Non-Functional Human Ending - Skip Alcohol"]
+    },
+    "AlcoholRunning":{
+        "cgs":[""],
+        "speech":[
+        "Carla drinks wine first thing in the morning and thought she could balance it by running and sweating it off so that the drinking doesn’t have any effect on her body.",
+        "And she thought wrong, running while drunk lead her having multiple injuries. Some where minor like falling on the ground and scratch her knee, and some of them were bad that she fell off a hill and got multiple bruises.",
+        "One day when she was running towards the park, she didn’t look both ways and almost got run over by a car, good thing that the driver was able to react quickly so that she didn’t get hurt but maybe in the future she won’t be this lucky.",
+        "In addition to gastrointestinal issues as a result of this destructive behavior.",
+        "Non-Functional Human Ending - Skip Running"]
+    },
+    "AlcoholChill":{
+        "cgs":[""],
+        "speech":[
+        "Carla’s morning ritual consists of drinking wine and eating snacks while mindlessly watching TV.",
+        "she only turns on the TV just for the noise so that she does not feel lonely in her apartment and to keep her from thinking about her life and have a panic attack because she did not accomplish anything in her life and label herself as a loser.",
+        "Sometimes she goes to work late because she forgot about the time. She’s facing a hard time trying to finish the tasks while under the influence of the wine she has been drinking this morning.",
+        "Non-Functional Human Ending - Alcohol Chill"]
+    },
+    "AlcoholSleep":{
+        "cgs":[""],
+        "speech":[
+        "Carla doesn’t wake up early but always make sure to drink wine before going to work. Sometimes she oversleeps and runs late to work.",
+        "Some instances she doesn’t wake up at all and end up missing the whole workday. No matter how much she sleeps she always want to sleep more.",
+        "The wine is the only reason why she wakes up now. Even during work, most of the time she gets caught sleeping on her desk instead of working. Her working days are numbered.",
+        "Non-Functional Human Ending - Alcohol Sleep"]
+    }
+}

@@ -5,21 +5,21 @@ onready var textLeft = $TextLeft
 onready var mainmenuButton = $MainMenuButton
 onready var nextButton = $TextLeft/NextButton
 
-var speechData
 var checkCount=0
 var speech=[]
 var cgs
-#"HealthyChill","HealthySleep","HealthyAlcohol","UnhealthyRunning"
-#,"UnhealthySleep","SkipChill","SkipSleep","AlcoholRunning":
+
+#"HealthyChill","HealthySleep"
 
 func _ready():
 	var speechDatafile= File.new()
-	speechDatafile.open ( "res://Data/Functional/FunctionalSpeech.json" , File.READ )
+	speechDatafile.open ( "res://Data/"+name+"Speech.json" , File.READ )
 	var speechDatajson= JSON.parse ( speechDatafile.get_as_text())
-	
-	speechData=speechDatajson.result
+	var speechData=speechDatajson.result
 	speechDatafile.close()
-	speech=speechData[RouteBuilder.route]
+	speech=speechData[RouteBuilder.route]["speech"]
+	cgs = speechData [RouteBuilder.route]["cgs"]
+	cg.texture = load("res://Assets/"+cgs[0])
 	textLeft.set_text(speech,checkCount)
 	checkCount+=1
 	

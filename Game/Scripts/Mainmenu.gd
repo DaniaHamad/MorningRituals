@@ -6,5 +6,5 @@ func _ready():
 
 func _on_Button_pressed():
 	Music.play_button_click()
-	get_tree().change_scene("res://Game/Scenes/Openning.tscn")
+	get_tree().change_scene("res://Game/Scenes/Opening.tscn")
 

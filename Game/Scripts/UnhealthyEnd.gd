@@ -9,14 +9,13 @@ onready var bathroomMirrorReflection = $BathroomMirrorReflection
 var checkCount=0
 var speech=[]
 var cgs = []
-var speechData
 
 func _ready():
 	var speechDatafile= File.new()
-	speechDatafile.open ( "res://Data/Unhealthy/UnhealthySpeech.json" , File.READ )
+	speechDatafile.open ( "res://Data/"+name+"Speech.json" , File.READ )
 	var speechDatajson= JSON.parse ( speechDatafile.get_as_text())
 	
-	speechData=speechDatajson.result
+	var speechData=speechDatajson.result
 	speechDatafile.close()
 	speech = speechData[RouteBuilder.route]["speech"]
 	cgs = speechData [RouteBuilder.route]["cgs"]
