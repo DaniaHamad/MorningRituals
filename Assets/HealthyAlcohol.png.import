@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SelectedArrow.png-64b7dbf9b35969a191c578ba1f1dfd13.stex"
+path="res://.import/HealthyAlcohol.png-5194a3fec19734e0a8afd6be51db0b32.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/SelectedArrow.png"
-dest_files=[ "res://.import/SelectedArrow.png-64b7dbf9b35969a191c578ba1f1dfd13.stex" ]
+source_file="res://Assets/HealthyAlcohol.png"
+dest_files=[ "res://.import/HealthyAlcohol.png-5194a3fec19734e0a8afd6be51db0b32.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

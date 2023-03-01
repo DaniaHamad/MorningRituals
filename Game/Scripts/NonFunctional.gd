@@ -8,7 +8,8 @@ onready var nextButton = $TextLeft/NextButton
 var checkCount=0
 var speech=[]
 var cgs
-#"HealthyAlcohol","UnhealthyAlcohol","UnhealthyRunning","UnhealthySleep","SkipChill","SkipSleep","SkipAlcohol","AlcoholRunning","AlcoholChill","AlcoholSleep"
+
+
 func _ready():
 	var speechDatafile= File.new()
 	speechDatafile.open ( "res://Data/"+name+"Speech.json" , File.READ )
@@ -17,9 +18,10 @@ func _ready():
 	speechDatafile.close()
 	speech=speechData[RouteBuilder.route]["speech"]
 	cgs = speechData [RouteBuilder.route]["cgs"]
-	#cg.texture = load("res://Assets/"+cgs[0])
+	cg.texture = load("res://Assets/"+cgs[0])
 	textLeft.set_text(speech,checkCount)
 	checkCount+=1
+	
 
 func _on_MainMenuButton_pressed():
 	RouteBuilder.resetRoute()
@@ -31,6 +33,7 @@ func _on_NextButton_pressed():
 		yield(get_tree().create_timer(.5),"timeout")
 		mainmenuButton.show()
 		nextButton.hide()
+		
 		
 	else:
 		checkCount+=1
