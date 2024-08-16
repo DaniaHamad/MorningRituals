@@ -1,0 +1,21 @@
+{
+	"Opening": {
+		"cgs": [
+			"hearing_coworkers",
+			"hearing_coworkers",
+			"hearing_coworkers",
+			"hearing_coworkers",
+			"laying_in_bed",
+			"breakfast_decision"
+		],
+		"speech": [
+			"Carla was a young woman who worked at a bustling office in the city. It’s not the most thrilling job but it pays the bills, but sometimes she felt a little overwhelmed by the fast-paced nature of her work.",
+			"One day, as Carla was walking to her boss’ office to give him an envelope, she overheard a group of her coworkers talking about their morning rituals.",
+			"They were discussing how they woke up early to meditate, make a healthy breakfast, and do some stretching before starting their workday.",
+			"Carla listened with interest, wondering if she could benefit from having some morning rituals of her own. She had always been a bit of a night owl, rushing to get ready in the morning and often feeling frazzled and stressed out as a result.",
+			"When she got home that evening, she went to bed a little earlier than usual, while she was lying on her back she said: “I need some kind of morning ritual…”",
+			"Carla decided to wake up at 6 am to decide what kind of food she will eat every morning. So, she decides…"
+		]
+	},
+	"decision": "breakfast"
+}

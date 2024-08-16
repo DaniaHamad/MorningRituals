@@ -1,0 +1,13 @@
+Control
+AnimationPlayer
+AudioStreamPlayer
+AnimatedSprite2D
+AnimationTree
+PanelContainer
+Panel
+ScrollContainer
+HBoxContainer
+Tree
+CenterContainer
+VBoxContainer
+CanvasGroup

@@ -6,32 +6,32 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
+config_version=5
 
 [application]
 
 config/name="Morning Rituals"
-run/main_scene="res://Game/Scenes/Mainmenu.tscn"
-boot_splash/image="res://Assets/Icons/PhoneIcon.png"
-boot_splash/bg_color=Color( 0.0705882, 0.133333, 0.247059, 1 )
-config/icon="res://Assets/Icons/PhoneIcon.png"
+run/main_scene="res://game/scenes/main_menu.tscn"
+config/features=PackedStringArray("4.2")
+boot_splash/bg_color=Color(0.0705882, 0.133333, 0.247059, 1)
+boot_splash/image="res://assets/Icons/PhoneIcon.png"
+config/icon="res://assets/Icons/PhoneIcon.png"
 config/windows_native_icon="res://Assets/Icons/PhoneIcon.ico"
 
 [autoload]
 
-RouteBuilder="*res://Game/Singletons/RouteBuilder.gd"
-Inputs="*res://Game/Singletons/Inputs.gd"
-Music="*res://Game/Singletons/Music.tscn"
+RouteBuilder="*res://game/singletons/route_builder.gd"
+Inputs="*res://game/singletons/inputs.gd"
+Music="*res://game/singletons/music.tscn"
 
 [display]
 
-window/size/width=1920
-window/size/height=1080
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
 window/size/fullscreen=true
-window/size/test_width=1280
-window/size/test_height=720
-window/stretch/mode="2d"
-window/stretch/aspect="keep"
 
 [gui]
 
@@ -61,6 +61,14 @@ texture={
 "svg/scale": 1.0
 }
 
+[input]
+
+ui_fullscreen={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194342,"physical_keycode":0,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
+}
+
 [input_devices]
 
 pointing/emulate_touch_from_mouse=true
@@ -71,6 +79,7 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+renderer/rendering_method="gl_compatibility"
+environment/defaults/default_environment="res://default_env.tres"
 2d/snapping/use_gpu_pixel_snap=true
 quality/filters/use_nearest_mipmap_filter=true
-environment/default_environment="res://default_env.tres"
