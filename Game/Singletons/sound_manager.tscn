@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c40840x8kavpl"]
+
+[ext_resource type="Script" path="res://game/singletons/sound_manager.gd" id="1_ruht5"]
+[ext_resource type="AudioStream" uid="uid://bg17ygsblxpj3" path="res://assets/sfx/ButtonClick.mp3" id="2_h2xh3"]
+
+[node name="SoundManager" type="Node"]
+script = ExtResource("1_ruht5")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+bus = &"BGM"
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+bus = &"SFX"
+
+[node name="ButtonSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_h2xh3")
+bus = &"SFX"

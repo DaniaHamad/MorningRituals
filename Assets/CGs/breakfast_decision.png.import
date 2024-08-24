@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpum0bkhjyo1"
-path="res://.godot/imported/breakfast_decision.png-7f0acd963c430d523b5286278843deee.ctex"
+path="res://.godot/imported/breakfast_decision.png-b6869e846d7ba9a2689c808817c059e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/CGs/breakfast_decision.png"
-dest_files=["res://.godot/imported/breakfast_decision.png-7f0acd963c430d523b5286278843deee.ctex"]
+source_file="res://assets/cgs/breakfast_decision.png"
+dest_files=["res://.godot/imported/breakfast_decision.png-b6869e846d7ba9a2689c808817c059e1.ctex"]
 
 [params]
 

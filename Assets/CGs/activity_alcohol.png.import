@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmicya5r5ktwe"
-path="res://.godot/imported/activity_alcohol.png-5059f1c43bd310bdc8e8f931a5779c27.ctex"
+path="res://.godot/imported/activity_alcohol.png-07f3b0080e169abc822c4b5ff9e530e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/CGs/activity_alcohol.png"
-dest_files=["res://.godot/imported/activity_alcohol.png-5059f1c43bd310bdc8e8f931a5779c27.ctex"]
+source_file="res://assets/cgs/activity_alcohol.png"
+dest_files=["res://.godot/imported/activity_alcohol.png-07f3b0080e169abc822c4b5ff9e530e3.ctex"]
 
 [params]
 

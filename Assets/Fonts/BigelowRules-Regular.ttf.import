@@ -3,18 +3,19 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://pvyuojlopnxt"
-path="res://.godot/imported/BigelowRules-Regular.ttf-0e893869c1bc3c2ebbe0c1bb23e109c2.fontdata"
+path="res://.godot/imported/BigelowRules-Regular.ttf-0354be7bbac07e0f55576e479fc93eae.fontdata"
 
 [deps]
 
-source_file="res://assets/Fonts/BigelowRules-Regular.ttf"
-dest_files=["res://.godot/imported/BigelowRules-Regular.ttf-0e893869c1bc3c2ebbe0c1bb23e109c2.fontdata"]
+source_file="res://assets/fonts/BigelowRules-Regular.ttf"
+dest_files=["res://.godot/imported/BigelowRules-Regular.ttf-0354be7bbac07e0f55576e479fc93eae.fontdata"]
 
 [params]
 
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
+disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48

@@ -1,6 +1,6 @@
 res://default_env.tres
-res://game/scenes/text_controller.tscn
+res://game/scenes/main_game.tscn
 res://game/scenes/main_menu.tscn
-res://game/scripts/text_controller.gd
-res://game/singletons/music.gd
-res://game/singletons/music.tscn
+res://game/singletons/sound_manager.tscn
+res://game/gui/decision_button.tscn
+res://game/scripts/main_game.gd

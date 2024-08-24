@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://biqy6303t7gus"
-path="res://.godot/imported/healthy_alcohol.png-5cec387e2f9c4f3431d14f6c3c4b7bbc.ctex"
+path="res://.godot/imported/healthy_alcohol.png-bb6de13a9212bff1bdba7282bba5e424.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/CGs/healthy_alcohol.png"
-dest_files=["res://.godot/imported/healthy_alcohol.png-5cec387e2f9c4f3431d14f6c3c4b7bbc.ctex"]
+source_file="res://assets/cgs/healthy_alcohol.png"
+dest_files=["res://.godot/imported/healthy_alcohol.png-bb6de13a9212bff1bdba7282bba5e424.ctex"]
 
 [params]
 

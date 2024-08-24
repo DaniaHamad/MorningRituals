@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://q3jkmrwapsj5"
-path="res://.godot/imported/socializing.png-7284002c08c631df7a5c15de9f167330.ctex"
+path="res://.godot/imported/socializing.png-8afd6e32ba117bce3c9834838783eecb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/CGs/socializing.png"
-dest_files=["res://.godot/imported/socializing.png-7284002c08c631df7a5c15de9f167330.ctex"]
+source_file="res://assets/cgs/socializing.png"
+dest_files=["res://.godot/imported/socializing.png-8afd6e32ba117bce3c9834838783eecb.ctex"]
 
 [params]
 

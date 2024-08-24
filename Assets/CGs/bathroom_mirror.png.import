@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqxclustsbsvo"
-path="res://.godot/imported/bathroom_mirror.png-9e0b92e83b3c9d014e805e05d7d5a978.ctex"
+path="res://.godot/imported/bathroom_mirror.png-f2172208f422ff249cb84ce4b9b73f7b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/CGs/bathroom_mirror.png"
-dest_files=["res://.godot/imported/bathroom_mirror.png-9e0b92e83b3c9d014e805e05d7d5a978.ctex"]
+source_file="res://assets/cgs/bathroom_mirror.png"
+dest_files=["res://.godot/imported/bathroom_mirror.png-f2172208f422ff249cb84ce4b9b73f7b.ctex"]
 
 [params]
 

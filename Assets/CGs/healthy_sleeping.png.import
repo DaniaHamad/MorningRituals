@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx8g5asvkjqum"
-path="res://.godot/imported/healthy_sleeping.png-c32e900ea967558bc3fac12481cc02e0.ctex"
+path="res://.godot/imported/healthy_sleeping.png-ae53bd9a13f234d1e976512e25dffc28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/CGs/healthy_sleeping.png"
-dest_files=["res://.godot/imported/healthy_sleeping.png-c32e900ea967558bc3fac12481cc02e0.ctex"]
+source_file="res://assets/cgs/healthy_sleeping.png"
+dest_files=["res://.godot/imported/healthy_sleeping.png-ae53bd9a13f234d1e976512e25dffc28.ctex"]
 
 [params]
 

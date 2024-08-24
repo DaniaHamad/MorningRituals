@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjvx72bo2005o"
-path="res://.godot/imported/laying_in_bed.png-7220507123aac1cba978917063244dc1.ctex"
+path="res://.godot/imported/laying_in_bed.png-8be25ade3c5bc98504186ccb75a3f38a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/CGs/laying_in_bed.png"
-dest_files=["res://.godot/imported/laying_in_bed.png-7220507123aac1cba978917063244dc1.ctex"]
+source_file="res://assets/cgs/laying_in_bed.png"
+dest_files=["res://.godot/imported/laying_in_bed.png-8be25ade3c5bc98504186ccb75a3f38a.ctex"]
 
 [params]
 

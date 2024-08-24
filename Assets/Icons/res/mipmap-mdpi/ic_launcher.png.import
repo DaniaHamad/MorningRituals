@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2t5yhb3615h2"
-path="res://.godot/imported/ic_launcher.png-99e9c8d7855112f8f6eeb392aafb8705.ctex"
+path="res://.godot/imported/ic_launcher.png-1227d0a437587db551b251b567df7a69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Icons/res/mipmap-mdpi/ic_launcher.png"
-dest_files=["res://.godot/imported/ic_launcher.png-99e9c8d7855112f8f6eeb392aafb8705.ctex"]
+source_file="res://assets/icons/res/mipmap-mdpi/ic_launcher.png"
+dest_files=["res://.godot/imported/ic_launcher.png-1227d0a437587db551b251b567df7a69.ctex"]
 
 [params]
 

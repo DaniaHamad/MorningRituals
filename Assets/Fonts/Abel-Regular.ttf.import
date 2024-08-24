@@ -3,18 +3,19 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bocbgm8fwpulf"
-path="res://.godot/imported/Abel-Regular.ttf-d2119b8ba7d13f880dba64d738c646e4.fontdata"
+path="res://.godot/imported/Abel-Regular.ttf-bf3b009a99f806cf7f9a1db0e8c688d7.fontdata"
 
 [deps]
 
-source_file="res://assets/Fonts/Abel-Regular.ttf"
-dest_files=["res://.godot/imported/Abel-Regular.ttf-d2119b8ba7d13f880dba64d738c646e4.fontdata"]
+source_file="res://assets/fonts/Abel-Regular.ttf"
+dest_files=["res://.godot/imported/Abel-Regular.ttf-bf3b009a99f806cf7f9a1db0e8c688d7.fontdata"]
 
 [params]
 
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
+disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48
