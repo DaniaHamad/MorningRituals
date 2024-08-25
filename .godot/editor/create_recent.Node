@@ -1,7 +1,10 @@
+VBoxContainer
+AnimationPlayer
+ColorRect
+CanvasLayer
 RichTextLabel
 Button
 Control
-AnimationPlayer
 AudioStreamPlayer
 AnimatedSprite2D
 AnimationTree
@@ -10,6 +13,3 @@ Panel
 ScrollContainer
 HBoxContainer
 Tree
-CenterContainer
-VBoxContainer
-CanvasGroup

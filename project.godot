@@ -23,6 +23,7 @@ config/windows_native_icon="res://Assets/Icons/PhoneIcon.ico"
 RouteBuilder="*res://game/singletons/route_builder.gd"
 Inputs="*res://game/singletons/inputs.gd"
 SoundManager="*res://game/singletons/sound_manager.tscn"
+TransitionScreen="*res://game/singletons/transition_screen.tscn"
 
 [display]
 

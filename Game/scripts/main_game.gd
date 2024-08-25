@@ -16,17 +16,18 @@ var chapters: PackedStringArray =[
 var index: int = 0
 var chapter_index: int = 0
 
-@onready var cg = %CG
-@onready var dialogue = %Dialogue
-@onready var bgm_button = %BGMButton
-@onready var sound_button = %SoundButton
-@onready var animation_player = %AnimationPlayer
-@onready var decisions = %Decisions
-@onready var ui = %UI
-@onready var next_button = %NextButton
-@onready var back_button = %BackButton
-@onready var main_menu_button = %MainMenuButton
-@onready var animation_text = $AnimationText
+@onready var cg: AnimatedSprite2D = %CG
+@onready var ui: VBoxContainer = %UI
+@onready var dialogue: RichTextLabel = %Dialogue
+@onready var bgm_button: TextureButton = %BGMButton
+@onready var sound_button: TextureButton = %SoundButton
+@onready var back_button: TextureButton = %BackButton
+@onready var next_button: TextureButton = %NextButton
+@onready var main_menu_button: Button = %MainMenuButton
+@onready var animation_player: AnimationPlayer = %AnimationPlayer
+@onready var animation_text: AnimationPlayer = $AnimationText
+@onready var decisions: Control = %Decisions
+
 
 func read_file(chapter: String, section: String):
 	var speech_data_file= FileAccess.open("res://game/data/" + chapter + "_speech.json",FileAccess.READ)
@@ -78,6 +79,8 @@ func scene_controller(animate_text: bool = true):
 		chapter_index+=1
 		for child in decisions.get_children():
 			child.visible = child.name.to_lower() == chapters[chapter_index]
+			if child.visible:
+				child.get_child(0).grab_focus()
 	if not setted and decision.is_empty():
 		RouteBuilder.conclude_route()
 		chapter_index =chapters.find(RouteBuilder.route_conclusion)
@@ -112,6 +115,8 @@ func _on_decision_pressed(decisionPicked, chapter):
 
 func _on_main_menu_button_pressed():
 	RouteBuilder.resetRoute()
+	TransitionScreen.transition()
+	await TransitionScreen.on_transition_finished
 	get_tree().change_scene_to_file("res://game/scenes/main_menu.tscn")
 
 
