@@ -1,0 +1,1201 @@
+[gd_scene load_steps=72 format=3 uid="uid://brddyy62dctfh"]
+
+[ext_resource type="Script" path="res://game/scripts/main_game.gd" id="1_nf3tq"]
+[ext_resource type="Texture2D" uid="uid://bmicya5r5ktwe" path="res://assets/cgs/activity_alcohol.png" id="2_31ra4"]
+[ext_resource type="Texture2D" uid="uid://mf2rd3k8l561" path="res://assets/cgs/activity_chill.png" id="3_0wkpj"]
+[ext_resource type="Texture2D" uid="uid://bbit5fve8ecqs" path="res://assets/cgs/activity_running.png" id="4_ekn5s"]
+[ext_resource type="Texture2D" uid="uid://dl2a75c4ui1gr" path="res://assets/cgs/activity_sleep.png" id="5_ewy4f"]
+[ext_resource type="Texture2D" uid="uid://cbwn17wdgyqoh" path="res://assets/cgs/bathroom_mirror_alcoholic.png" id="6_lrkuv"]
+[ext_resource type="Texture2D" uid="uid://d28infv0q3r7p" path="res://assets/cgs/bathroom_mirror_anorexia.png" id="7_jr4bd"]
+[ext_resource type="Texture2D" uid="uid://dmaypttvd2axw" path="res://assets/cgs/bathroom_mirror_fat.png" id="8_iwkrp"]
+[ext_resource type="Texture2D" uid="uid://bpum0bkhjyo1" path="res://assets/cgs/breakfast_decision.png" id="9_x0a8l"]
+[ext_resource type="Texture2D" uid="uid://cucln8m5vdmg2" path="res://assets/cgs/breakfast_variations.png" id="10_20m51"]
+[ext_resource type="Texture2D" uid="uid://biqy6303t7gus" path="res://assets/cgs/healthy_alcohol.png" id="11_x31bj"]
+[ext_resource type="Texture2D" uid="uid://dx8g5asvkjqum" path="res://assets/cgs/healthy_sleeping.png" id="12_ctt7v"]
+[ext_resource type="Texture2D" uid="uid://q6cak0igtbfd" path="res://assets/cgs/hearing_coworkers.png" id="13_sikh0"]
+[ext_resource type="Texture2D" uid="uid://bjvx72bo2005o" path="res://assets/cgs/laying_in_bed.png" id="14_kb3l8"]
+[ext_resource type="Texture2D" uid="uid://q3jkmrwapsj5" path="res://assets/cgs/socializing.png" id="15_32g17"]
+[ext_resource type="Texture2D" uid="uid://b44ugwhlm3irq" path="res://assets/test/frame0000.png" id="16_gkgys"]
+[ext_resource type="Texture2D" uid="uid://td8554l5xb5q" path="res://assets/test/frame0001.png" id="17_x2ox5"]
+[ext_resource type="Texture2D" uid="uid://c4w7grv7e5x4p" path="res://assets/test/frame0002.png" id="18_fuaq0"]
+[ext_resource type="Texture2D" uid="uid://b4ugplu60f2xy" path="res://assets/test/frame0003.png" id="19_gperk"]
+[ext_resource type="Texture2D" uid="uid://bm670dot4fqqf" path="res://assets/test/frame0004.png" id="20_re4uc"]
+[ext_resource type="Texture2D" uid="uid://bu6gvypmu20qb" path="res://assets/test/frame0005.png" id="21_ih7g0"]
+[ext_resource type="Texture2D" uid="uid://c3hyuoufi5ayl" path="res://assets/test/frame0006.png" id="22_28rmf"]
+[ext_resource type="Texture2D" uid="uid://bcqb2x3q6k1hy" path="res://assets/test/frame0007.png" id="23_k45hr"]
+[ext_resource type="Texture2D" uid="uid://cqa575q2n3m41" path="res://assets/gui/text_field.png" id="24_fu5wt"]
+[ext_resource type="FontFile" uid="uid://bocbgm8fwpulf" path="res://assets/fonts/Abel-Regular.ttf" id="25_3ncd4"]
+[ext_resource type="Texture2D" uid="uid://c2rsrm4nqfxgd" path="res://assets/gui/music_on.png" id="26_yu6sr"]
+[ext_resource type="Texture2D" uid="uid://bmvgfy43cv1r0" path="res://assets/gui/music_off.png" id="27_b7nny"]
+[ext_resource type="Texture2D" uid="uid://cngk175sfkocm" path="res://assets/gui/audio.png" id="28_s40sk"]
+[ext_resource type="Texture2D" uid="uid://dy4q8pjtpivyp" path="res://assets/gui/mute.png" id="29_sbapr"]
+[ext_resource type="Texture2D" uid="uid://datkgxmhxc634" path="res://assets/gui/default_arrow.svg" id="30_fa2xb"]
+[ext_resource type="Texture2D" uid="uid://bh0dsdg7218pe" path="res://assets/gui/selected_arrow.png" id="31_4xv4u"]
+[ext_resource type="Texture2D" uid="uid://dorl4mueqf8b" path="res://assets/gui/disabled_arrow.svg" id="32_a47qa"]
+[ext_resource type="FontFile" uid="uid://pvyuojlopnxt" path="res://assets/fonts/BigelowRules-Regular.ttf" id="32_vdmcg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hx3sk"]
+bg_color = Color(0.243137, 0.360784, 0.596078, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j5mee"]
+bg_color = Color(0.14902, 0.258824, 0.403922, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3h0ax"]
+bg_color = Color(0.121569, 0.180392, 0.301961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3r770"]
+bg_color = Color(0.439216, 0.572549, 0.74902, 1)
+
+[sub_resource type="Theme" id="Theme_1lyto"]
+Button/font_sizes/font_size = 128
+Button/fonts/font = ExtResource("32_vdmcg")
+Button/styles/hover = SubResource("StyleBoxFlat_hx3sk")
+Button/styles/normal = SubResource("StyleBoxFlat_j5mee")
+Button/styles/pressed = SubResource("StyleBoxFlat_3h0ax")
+TooltipPanel/constants/resize_margin = 10
+TooltipPanel/fonts/title_font = ExtResource("32_vdmcg")
+TooltipPanel/styles/panel = SubResource("StyleBoxFlat_3r770")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6adnm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_31ra4")
+}],
+"loop": true,
+"name": &"activity_alcohol",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_0wkpj")
+}],
+"loop": true,
+"name": &"activity_chill",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ekn5s")
+}],
+"loop": true,
+"name": &"activity_running",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ewy4f")
+}],
+"loop": true,
+"name": &"activity_sleep",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_lrkuv")
+}],
+"loop": true,
+"name": &"bathroom_mirror_alcoholic",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_jr4bd")
+}],
+"loop": true,
+"name": &"bathroom_mirror_anorexia",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_iwkrp")
+}],
+"loop": true,
+"name": &"bathroom_mirror_fat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_x0a8l")
+}],
+"loop": false,
+"name": &"breakfast_decision",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_20m51")
+}],
+"loop": false,
+"name": &"breakfast_variations",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_x31bj")
+}],
+"loop": true,
+"name": &"healthy_alcohol",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_ctt7v")
+}],
+"loop": true,
+"name": &"healthy_sleeping",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_sikh0")
+}],
+"loop": false,
+"name": &"hearing_coworkers",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_kb3l8")
+}],
+"loop": false,
+"name": &"laying_in_bed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_32g17")
+}],
+"loop": true,
+"name": &"socializing",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_gkgys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_x2ox5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_fuaq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_gperk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_re4uc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ih7g0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_28rmf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_k45hr")
+}],
+"loop": false,
+"name": &"test",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_gkgys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_k45hr")
+}],
+"loop": false,
+"name": &"test2",
+"speed": 24.0
+}]
+
+[sub_resource type="InputEventKey" id="InputEventKey_apqxy"]
+device = -1
+keycode = 77
+unicode = 109
+
+[sub_resource type="Shortcut" id="Shortcut_1yw6r"]
+events = [SubResource("InputEventKey_apqxy")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_o3msw"]
+device = -1
+keycode = 78
+unicode = 110
+
+[sub_resource type="Shortcut" id="Shortcut_f8q1i"]
+events = [SubResource("InputEventKey_o3msw")]
+
+[sub_resource type="InputEventAction" id="InputEventAction_0k5cn"]
+action = &"ui_accept"
+
+[sub_resource type="Shortcut" id="Shortcut_xb6ck"]
+events = [SubResource("InputEventAction_0k5cn")]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u5lfr"]
+bg_color = Color(0.243137, 0.360784, 0.596078, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yaomg"]
+bg_color = Color(0.121569, 0.180392, 0.301961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5bx5p"]
+bg_color = Color(0.14902, 0.258824, 0.403922, 1)
+
+[sub_resource type="InputEventAction" id="InputEventAction_yjrxx"]
+action = &"ui_accept"
+
+[sub_resource type="Shortcut" id="Shortcut_8l0wt"]
+events = [SubResource("InputEventAction_yjrxx")]
+
+[sub_resource type="Animation" id="Animation_53asq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [7]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("UI/TextField/Dialogue:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_cl8it"]
+resource_name = "activity_alcohol"
+length = 0.0416708
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"activity_alcohol"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.291667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["kitchen.ogg"],
+"method": &"set_bgm"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_gq3mp"]
+resource_name = "activity_chill"
+length = 0.0416708
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"activity_chill"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.291667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["room.mp3"],
+"method": &"set_bgm"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_36bg3"]
+resource_name = "activity_running"
+length = 0.0416708
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"activity_running"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.291667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["nature.ogg"],
+"method": &"set_bgm"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_gvrep"]
+resource_name = "activity_sleep"
+length = 0.0416708
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"activity_sleep"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.291667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["room.mp3"],
+"method": &"set_bgm"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_i6io6"]
+resource_name = "bathroom_mirror_alcoholic"
+length = 0.0416708
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"bathroom_mirror_alcoholic"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.2919),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["bathroom.ogg"],
+"method": &"set_bgm"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_7rslo"]
+resource_name = "bathroom_mirror_anorexia"
+length = 0.0416708
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"bathroom_mirror_anorexia"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.2919),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["bathroom.ogg"],
+"method": &"set_bgm"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_chtin"]
+resource_name = "bathroom_mirror_fat"
+length = 0.0416708
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"bathroom_mirror_fat"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.2919),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["bathroom.ogg"],
+"method": &"set_bgm"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_2c0sd"]
+resource_name = "breakfast_decision"
+length = 0.0416708
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"breakfast_decision"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.291667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["waking.ogg"],
+"method": &"set_bgm"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_lvprw"]
+resource_name = "breakfast_variations"
+length = 0.0416708
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"breakfast_variations"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.291667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["kitchen.ogg"],
+"method": &"set_bgm"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_joyeg"]
+resource_name = "healthy_alcohol"
+length = 0.0416708
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"healthy_alcohol"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.291667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["office.ogg"],
+"method": &"set_bgm"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_ss5kv"]
+resource_name = "healthy_sleeping"
+length = 0.0416708
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"healthy_sleeping"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.291667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["waking.ogg"],
+"method": &"set_bgm"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_02q58"]
+resource_name = "hearing_coworkers"
+length = 0.0416708
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"hearing_coworkers"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.291667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["office.ogg"],
+"method": &"set_bgm"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_7mspy"]
+resource_name = "laying_in_bed"
+length = 0.0416708
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"laying_in_bed"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.291667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["room.mp3"],
+"method": &"set_bgm"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_pafvl"]
+resource_name = "new_animation"
+length = 0.333338
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"test"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.291667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_6ege0"]
+resource_name = "new_animation_3"
+length = 0.0833375
+loop_mode = 1
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"test2"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.291667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_v5kcd"]
+resource_name = "socializing"
+length = 0.0416708
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CG:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"socializing"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CG:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0416667, 0.0833333, 0.125, 0.166667, 0.208333, 0.25, 0.2919),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["office.ogg"],
+"method": &"set_bgm"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_r4grg"]
+_data = {
+"RESET": SubResource("Animation_53asq"),
+"activity_alcohol": SubResource("Animation_cl8it"),
+"activity_chill": SubResource("Animation_gq3mp"),
+"activity_running": SubResource("Animation_36bg3"),
+"activity_sleep": SubResource("Animation_gvrep"),
+"bathroom_mirror_alcoholic": SubResource("Animation_i6io6"),
+"bathroom_mirror_anorexia": SubResource("Animation_7rslo"),
+"bathroom_mirror_fat": SubResource("Animation_chtin"),
+"breakfast_decision": SubResource("Animation_2c0sd"),
+"breakfast_variations": SubResource("Animation_lvprw"),
+"healthy_alcohol": SubResource("Animation_joyeg"),
+"healthy_sleeping": SubResource("Animation_ss5kv"),
+"hearing_coworkers": SubResource("Animation_02q58"),
+"laying_in_bed": SubResource("Animation_7mspy"),
+"new_animation": SubResource("Animation_pafvl"),
+"new_animation_3": SubResource("Animation_6ege0"),
+"socializing": SubResource("Animation_v5kcd")
+}
+
+[sub_resource type="Animation" id="Animation_tycpi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UI/TextField/Dialogue:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_jssec"]
+resource_name = "animate_text"
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UI/TextField/Dialogue:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_83q8n"]
+_data = {
+"RESET": SubResource("Animation_tycpi"),
+"animate_text": SubResource("Animation_jssec")
+}
+
+[node name="MainGame" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+theme = SubResource("Theme_1lyto")
+script = ExtResource("1_nf3tq")
+
+[node name="CG" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(960, 540)
+sprite_frames = SubResource("SpriteFrames_6adnm")
+animation = &"socializing"
+
+[node name="UI" type="VBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_direction = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.084
+anchor_right = 0.05
+anchor_bottom = 0.084
+offset_left = 104.0
+offset_top = 115.0
+offset_right = 921.0
+offset_bottom = 1052.0
+theme_override_constants/separation = 30
+
+[node name="TextField" type="TextureRect" parent="UI"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("24_fu5wt")
+
+[node name="Dialogue" type="RichTextLabel" parent="UI/TextField"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = -79.0
+offset_bottom = -39.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("25_3ncd4")
+theme_override_font_sizes/normal_font_size = 52
+bbcode_enabled = true
+text = "6rt6yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+scroll_active = false
+text_direction = 1
+language = "en"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI"]
+layout_direction = 2
+layout_mode = 2
+theme_override_constants/separation = 117
+
+[node name="BGMButton" type="TextureButton" parent="UI/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+toggle_mode = true
+shortcut = SubResource("Shortcut_1yw6r")
+texture_normal = ExtResource("26_yu6sr")
+texture_pressed = ExtResource("27_b7nny")
+
+[node name="SoundButton" type="TextureButton" parent="UI/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+toggle_mode = true
+shortcut = SubResource("Shortcut_f8q1i")
+texture_normal = ExtResource("28_s40sk")
+texture_pressed = ExtResource("29_sbapr")
+
+[node name="BackButton" type="TextureButton" parent="UI/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+disabled = true
+texture_normal = ExtResource("30_fa2xb")
+texture_pressed = ExtResource("31_4xv4u")
+texture_disabled = ExtResource("32_a47qa")
+flip_h = true
+
+[node name="NextButton" type="TextureButton" parent="UI/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+shortcut = SubResource("Shortcut_xb6ck")
+shortcut_feedback = false
+texture_normal = ExtResource("30_fa2xb")
+texture_pressed = ExtResource("31_4xv4u")
+texture_disabled = ExtResource("32_a47qa")
+
+[node name="MainMenuButton" type="Button" parent="UI/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(380, 0)
+layout_mode = 2
+size_flags_vertical = 0
+focus_mode = 0
+theme_override_fonts/font = ExtResource("32_vdmcg")
+theme_override_font_sizes/font_size = 84
+theme_override_styles/hover = SubResource("StyleBoxFlat_u5lfr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yaomg")
+theme_override_styles/normal = SubResource("StyleBoxFlat_5bx5p")
+shortcut = SubResource("Shortcut_8l0wt")
+text = "Main Menu"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_r4grg")
+}
+autoplay = "hearing_coworkers"
+
+[node name="AnimationText" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_83q8n")
+}
+
+[node name="Decisions" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Breakfast" type="GridContainer" parent="Decisions"]
+visible = false
+layout_mode = 0
+offset_left = 160.0
+offset_top = 288.0
+offset_right = 960.0
+offset_bottom = 642.0
+size_flags_horizontal = 2
+focus_neighbor_top = NodePath("Healthy")
+columns = 2
+
+[node name="Healthy" type="Button" parent="Decisions/Breakfast"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Healthy"
+
+[node name="Unhealthy" type="Button" parent="Decisions/Breakfast"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Unhealthy"
+
+[node name="Skip" type="Button" parent="Decisions/Breakfast"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Skip"
+
+[node name="Alcohol" type="Button" parent="Decisions/Breakfast"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Alcohol"
+
+[node name="Activity" type="GridContainer" parent="Decisions"]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 288.0
+offset_right = 960.0
+offset_bottom = 642.0
+size_flags_horizontal = 2
+columns = 2
+
+[node name="Running" type="Button" parent="Decisions/Activity"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Running"
+
+[node name="Chill" type="Button" parent="Decisions/Activity"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Chill"
+
+[node name="Sleep" type="Button" parent="Decisions/Activity"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sleep"
+
+[node name="Alcohol" type="Button" parent="Decisions/Activity"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Alcohol"
+
+[connection signal="pressed" from="UI/HBoxContainer/BGMButton" to="." method="_on_music_button_pressed"]
+[connection signal="pressed" from="UI/HBoxContainer/SoundButton" to="." method="_on_sound_button_pressed"]
+[connection signal="pressed" from="UI/HBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="UI/HBoxContainer/NextButton" to="." method="_on_next_button_pressed"]
+[connection signal="pressed" from="UI/HBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="Decisions/Breakfast/Healthy" to="." method="_on_decision_pressed" binds= ["Healthy", "breakfast"]]
+[connection signal="pressed" from="Decisions/Breakfast/Unhealthy" to="." method="_on_decision_pressed" binds= ["Unhealthy", "breakfast"]]
+[connection signal="pressed" from="Decisions/Breakfast/Skip" to="." method="_on_decision_pressed" binds= ["Skip", "breakfast"]]
+[connection signal="pressed" from="Decisions/Breakfast/Alcohol" to="." method="_on_decision_pressed" binds= ["Alcohol", "breakfast"]]
+[connection signal="pressed" from="Decisions/Activity/Running" to="." method="_on_decision_pressed" binds= ["Running", "activity"]]
+[connection signal="pressed" from="Decisions/Activity/Chill" to="." method="_on_decision_pressed" binds= ["Chill", "activity"]]
+[connection signal="pressed" from="Decisions/Activity/Sleep" to="." method="_on_decision_pressed" binds= ["Sleep", "activity"]]
+[connection signal="pressed" from="Decisions/Activity/Alcohol" to="." method="_on_decision_pressed" binds= ["Alcohol", "activity"]]

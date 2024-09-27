@@ -1,9 +1,6 @@
 res://default_env.tres
-res://game/gui/transition_screen.tscn
-res://game/gui/transition_screen.gd
 res://game/scenes/main_menu.tscn
-res://game/scripts/main_menu.gd
 res://game/scenes/main_game.tscn
-res://game/scripts/main_game.gd
-res://game/singletons/transition_screen.tscn
-res://game/singletons/inputs.gd
+res://game/scenes/gui/menu_button.tscn
+res://game/scripts/gui/menu_button.gd
+res://game/scripts/main_menu.gd

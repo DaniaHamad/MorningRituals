@@ -1,9 +1,9 @@
 extends Control
 
-@onready var start: Button = %Start
+@onready var start: TextureButton = %Start
 
 func _ready():
-	SoundManager.set_bgm("res://assets/bgm/office.mp3")
+	SoundManager.set_bgm("res://assets/bgm/waking.ogg")
 	start.grab_focus()
 
 func _on_start_pressed() -> void:

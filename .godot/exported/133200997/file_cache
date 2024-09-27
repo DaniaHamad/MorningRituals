@@ -1,0 +1,6 @@
+res://game/scenes/main_game.tscn::344c317a0beeda38277ef2324e6cffeb::1724598211::res://.godot/exported/133200997/export-67092b45d7223f9d6f402705d394559d-main_game.scn
+res://game/scenes/main_menu.tscn::acaa9e57da6d287e89b1a74c53085587::1724598211::res://.godot/exported/133200997/export-bc8608ba8a2eeb83d7cb7224dfefb81f-main_menu.scn
+res://game/singletons/sound_manager.tscn::e64e7498cab37d8695b77fb5f4f983ea::1724567563::res://.godot/exported/133200997/export-9cdb8ce0aabed9ec83cd3f915902a377-sound_manager.scn
+res://game/singletons/transition_screen.tscn::e864a7a553ed608251c581246ee362ab::1724598211::res://.godot/exported/133200997/export-a421ac491fbd70cdc8988823e66efe88-transition_screen.scn
+res://default_bus_layout.tres::146e2e888f0195e5879e90e353099daf::1723880145::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
+res://default_env.tres::a59a200b20312d321f3879dce78e269c::1724598211::res://.godot/exported/133200997/export-7cf3fd67ad9f55210191d77b582b8209-default_env.res
