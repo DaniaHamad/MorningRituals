@@ -15,3 +15,6 @@ bus = &"SFX"
 [node name="ButtonSFX" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_h2xh3")
 bus = &"SFX"
+
+[node name="TypingSFX" type="AudioStreamPlayer" parent="."]
+bus = &"SFX"

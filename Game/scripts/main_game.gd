@@ -15,6 +15,7 @@ var chapters: PackedStringArray =[
 
 var index: int = 0
 var chapter_index: int = 0
+var previous_visible_characters = 0
 
 @onready var cg: AnimatedSprite2D = %CG
 @onready var ui: VBoxContainer = %UI
@@ -25,7 +26,7 @@ var chapter_index: int = 0
 @onready var next_button: TextureButton = %NextButton
 @onready var main_menu_button: Button = %MainMenuButton
 @onready var animation_player: AnimationPlayer = %AnimationPlayer
-@onready var animation_text: AnimationPlayer = $AnimationText
+@onready var animation_text: AnimationPlayer = %AnimationText
 @onready var decisions: Control = %Decisions
 
 
@@ -55,12 +56,19 @@ func set_text(animate: bool = true) -> bool:
 	if index < speech.size() and index >=0:
 		if animate:
 			dialogue.visible_ratio = 0
+			previous_visible_characters = 0
 			dialogue.text = speech[index]
 			animation_text.play("animate_text")
+			set_process(true)
 		else:
 			dialogue.text = speech[index]
 		return true
 	return false
+
+func _process(delta):
+	if dialogue.visible_characters > previous_visible_characters + 5:
+		SoundManager.play_typing()
+		previous_visible_characters = dialogue.visible_characters
 
 func set_cg():
 	if index < cgs.size() and index >=0:
@@ -133,3 +141,8 @@ func _on_sound_button_pressed():
 
 func set_bgm(bgm_path: String):
 	SoundManager.set_bgm("res://assets/bgm/" + bgm_path)
+
+
+func _on_animation_text_animation_finished(anim_name: StringName) -> void:
+	set_process(false)
+	SoundManager.play_typing(false)

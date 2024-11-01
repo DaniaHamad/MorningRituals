@@ -1,3 +1,4 @@
+AudioStreamPlayer
 Label
 HBoxContainer
 RichTextLabel
@@ -9,7 +10,5 @@ ColorRect
 CanvasLayer
 Button
 Control
-AudioStreamPlayer
 AnimatedSprite2D
 AnimationTree
-PanelContainer

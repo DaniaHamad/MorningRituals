@@ -1114,6 +1114,7 @@ libraries = {
 autoplay = "hearing_coworkers"
 
 [node name="AnimationText" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
 libraries = {
 "": SubResource("AnimationLibrary_83q8n")
 }
@@ -1191,6 +1192,7 @@ text = "Alcohol"
 [connection signal="pressed" from="UI/HBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="UI/HBoxContainer/NextButton" to="." method="_on_next_button_pressed"]
 [connection signal="pressed" from="UI/HBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="animation_finished" from="AnimationText" to="." method="_on_animation_text_animation_finished"]
 [connection signal="pressed" from="Decisions/Breakfast/Healthy" to="." method="_on_decision_pressed" binds= ["Healthy", "breakfast"]]
 [connection signal="pressed" from="Decisions/Breakfast/Unhealthy" to="." method="_on_decision_pressed" binds= ["Unhealthy", "breakfast"]]
 [connection signal="pressed" from="Decisions/Breakfast/Skip" to="." method="_on_decision_pressed" binds= ["Skip", "breakfast"]]
