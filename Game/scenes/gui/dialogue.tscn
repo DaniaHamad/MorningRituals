@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://b75q3lv06hw8m"]
+
+[ext_resource type="FontFile" uid="uid://bocbgm8fwpulf" path="res://assets/fonts/Abel-Regular.ttf" id="1_54wii"]
+[ext_resource type="Script" path="res://game/scenes/gui/dialogue.gd" id="2_mc14t"]
+
+[node name="Dialogue" type="RichTextLabel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("1_54wii")
+theme_override_font_sizes/normal_font_size = 52
+bbcode_enabled = true
+text = "6rt6yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+scroll_active = false
+text_direction = 1
+language = "en"
+script = ExtResource("2_mc14t")

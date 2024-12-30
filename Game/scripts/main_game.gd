@@ -2,7 +2,7 @@ extends Control
 
 var speech: Array = []
 var cgs: Array = []
-var decision =""
+var decision = ""
 
 var chapters: PackedStringArray =[
 	"opening",
@@ -15,7 +15,7 @@ var chapters: PackedStringArray =[
 
 var index: int = 0
 var chapter_index: int = 0
-var previous_visible_characters = 0
+
 
 @onready var cg: AnimatedSprite2D = %CG
 @onready var ui: VBoxContainer = %UI
@@ -26,7 +26,6 @@ var previous_visible_characters = 0
 @onready var next_button: TextureButton = %NextButton
 @onready var main_menu_button: Button = %MainMenuButton
 @onready var animation_player: AnimationPlayer = %AnimationPlayer
-@onready var animation_text: AnimationPlayer = %AnimationText
 @onready var decisions: Control = %Decisions
 
 
@@ -39,6 +38,7 @@ func read_file(chapter: String, section: String):
 	speech += speech_data[section]["speech"]
 	cgs += speech_data[section]["cgs"]
 	decision = speech_data["decision"]
+
 
 func _ready():
 	bgm_button.set_pressed_no_signal(SoundManager.bgm_state)
@@ -55,24 +55,18 @@ func _ready():
 func set_text(animate: bool = true) -> bool:
 	if index < speech.size() and index >=0:
 		if animate:
-			dialogue.visible_ratio = 0
-			previous_visible_characters = 0
-			dialogue.text = speech[index]
-			animation_text.play("animate_text")
-			set_process(true)
+			dialogue.typewriter_effect(speech[index])
 		else:
 			dialogue.text = speech[index]
+			dialogue.visible_characters = -1
 		return true
 	return false
 
-func _process(delta):
-	if dialogue.visible_characters > previous_visible_characters + 5:
-		SoundManager.play_typing()
-		previous_visible_characters = dialogue.visible_characters
 
 func set_cg():
 	if index < cgs.size() and index >=0:
 		animation_player.play(cgs[index])
+
 
 func scene_controller(animate_text: bool = true):
 	var setted: bool = set_text(animate_text)
@@ -102,8 +96,8 @@ func scene_controller(animate_text: bool = true):
 
 func _on_next_button_pressed():
 	SoundManager.play_button_click()
-	if animation_text.is_playing():
-		animation_text.seek(animation_text.current_animation_length, true)
+	if dialogue.is_typing:
+		dialogue.skip_effect()
 	else:
 		index = clampi(index + 1, 0, speech.size())
 		scene_controller()
@@ -141,8 +135,3 @@ func _on_sound_button_pressed():
 
 func set_bgm(bgm_path: String):
 	SoundManager.set_bgm("res://assets/bgm/" + bgm_path)
-
-
-func _on_animation_text_animation_finished(anim_name: StringName) -> void:
-	set_process(false)
-	SoundManager.play_typing(false)

@@ -1,7 +1,7 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
 ::res://::1726490750
 default_bus_layout.tres::AudioBusLayout::2843248324150241352::1723880145::0::1::::<><>::
-default_env.tres::Environment::2632809094138645313::1729878867::0::1::::<><>::
+default_env.tres::Environment::2632809094138645313::1735581340::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1724597751::0::1::::<><>::
 icon.png::CompressedTexture2D::6422922822572798946::1666540527::1677737155::1::::<><>::
 README.md::TextFile::-1::1670079771::0::1::::<><>::
@@ -112,12 +112,14 @@ nonfunctional_speech.json::JSON::-1::1723809744::0::1::::<><>::
 opening_speech.json::JSON::-1::1723809744::0::1::::<><>::
 unhealthy_speech.json::JSON::-1::1723809744::0::1::::<><>::
 ::res://game/scenes/::1729873637
-main_game.tscn::PackedScene::3586050478514054365::1729878529::0::1::::<><>::res://game/scripts/main_game.gd<>uid://bmicya5r5ktwe::::res://assets/cgs/activity_alcohol.png<>uid://mf2rd3k8l561::::res://assets/cgs/activity_chill.png<>uid://bbit5fve8ecqs::::res://assets/cgs/activity_running.png<>uid://dl2a75c4ui1gr::::res://assets/cgs/activity_sleep.png<>uid://cbwn17wdgyqoh::::res://assets/cgs/bathroom_mirror_alcoholic.png<>uid://d28infv0q3r7p::::res://assets/cgs/bathroom_mirror_anorexia.png<>uid://dmaypttvd2axw::::res://assets/cgs/bathroom_mirror_fat.png<>uid://bpum0bkhjyo1::::res://assets/cgs/breakfast_decision.png<>uid://cucln8m5vdmg2::::res://assets/cgs/breakfast_variations.png<>uid://biqy6303t7gus::::res://assets/cgs/healthy_alcohol.png<>uid://dx8g5asvkjqum::::res://assets/cgs/healthy_sleeping.png<>uid://q6cak0igtbfd::::res://assets/cgs/hearing_coworkers.png<>uid://bjvx72bo2005o::::res://assets/cgs/laying_in_bed.png<>uid://q3jkmrwapsj5::::res://assets/cgs/socializing.png<>uid://b44ugwhlm3irq::::res://assets/test/frame0000.png<>uid://td8554l5xb5q::::res://assets/test/frame0001.png<>uid://c4w7grv7e5x4p::::res://assets/test/frame0002.png<>uid://b4ugplu60f2xy::::res://assets/test/frame0003.png<>uid://bm670dot4fqqf::::res://assets/test/frame0004.png<>uid://bu6gvypmu20qb::::res://assets/test/frame0005.png<>uid://c3hyuoufi5ayl::::res://assets/test/frame0006.png<>uid://bcqb2x3q6k1hy::::res://assets/test/frame0007.png<>uid://d02svw3uekeon::::res://assets/gui/text_field.png<>uid://bocbgm8fwpulf::::res://assets/fonts/Abel-Regular.ttf<>uid://c2rsrm4nqfxgd::::res://assets/gui/music_on.png<>uid://bmvgfy43cv1r0::::res://assets/gui/music_off.png<>uid://cngk175sfkocm::::res://assets/gui/audio.png<>uid://dy4q8pjtpivyp::::res://assets/gui/mute.png<>uid://datkgxmhxc634::::res://assets/gui/default_arrow.svg<>uid://bh0dsdg7218pe::::res://assets/gui/selected_arrow.png<>uid://dorl4mueqf8b::::res://assets/gui/disabled_arrow.svg<>uid://pvyuojlopnxt::::res://assets/fonts/BigelowRules-Regular.ttf
-main_menu.tscn::PackedScene::6363690621657839558::1729878845::0::1::::<><>::res://game/scripts/main_menu.gd<>uid://jss7mogedm0r::::res://assets/gui/closed_book.png<>uid://pvyuojlopnxt::::res://assets/fonts/BigelowRules-Regular.ttf<>uid://b7l4hl71xmp2m::::res://game/scenes/gui/menu_button.tscn
-::res://game/scenes/gui/::1729873761
-menu_button.tscn::PackedScene::4656945757155496174::1729878845::0::1::::<><>::res://game/scripts/gui/menu_button.gd<>uid://pvyuojlopnxt::::res://assets/fonts/BigelowRules-Regular.ttf<>uid://ckbmn5gvpq2a::::res://assets/gui/focus.png
+main_game.tscn::PackedScene::3586050478514054365::1735581340::0::1::::<><>::res://game/scripts/main_game.gd<>uid://bmicya5r5ktwe::::res://assets/cgs/activity_alcohol.png<>uid://mf2rd3k8l561::::res://assets/cgs/activity_chill.png<>uid://bbit5fve8ecqs::::res://assets/cgs/activity_running.png<>uid://dl2a75c4ui1gr::::res://assets/cgs/activity_sleep.png<>uid://cbwn17wdgyqoh::::res://assets/cgs/bathroom_mirror_alcoholic.png<>uid://d28infv0q3r7p::::res://assets/cgs/bathroom_mirror_anorexia.png<>uid://dmaypttvd2axw::::res://assets/cgs/bathroom_mirror_fat.png<>uid://bpum0bkhjyo1::::res://assets/cgs/breakfast_decision.png<>uid://cucln8m5vdmg2::::res://assets/cgs/breakfast_variations.png<>uid://biqy6303t7gus::::res://assets/cgs/healthy_alcohol.png<>uid://dx8g5asvkjqum::::res://assets/cgs/healthy_sleeping.png<>uid://q6cak0igtbfd::::res://assets/cgs/hearing_coworkers.png<>uid://bjvx72bo2005o::::res://assets/cgs/laying_in_bed.png<>uid://q3jkmrwapsj5::::res://assets/cgs/socializing.png<>uid://b44ugwhlm3irq::::res://assets/test/frame0000.png<>uid://td8554l5xb5q::::res://assets/test/frame0001.png<>uid://c4w7grv7e5x4p::::res://assets/test/frame0002.png<>uid://b4ugplu60f2xy::::res://assets/test/frame0003.png<>uid://bm670dot4fqqf::::res://assets/test/frame0004.png<>uid://bu6gvypmu20qb::::res://assets/test/frame0005.png<>uid://c3hyuoufi5ayl::::res://assets/test/frame0006.png<>uid://bcqb2x3q6k1hy::::res://assets/test/frame0007.png<>uid://d02svw3uekeon::::res://assets/gui/text_field.png<>uid://b75q3lv06hw8m::::res://game/scenes/gui/dialogue.tscn<>uid://c2rsrm4nqfxgd::::res://assets/gui/music_on.png<>uid://bmvgfy43cv1r0::::res://assets/gui/music_off.png<>uid://cngk175sfkocm::::res://assets/gui/audio.png<>uid://dy4q8pjtpivyp::::res://assets/gui/mute.png<>uid://datkgxmhxc634::::res://assets/gui/default_arrow.svg<>uid://bh0dsdg7218pe::::res://assets/gui/selected_arrow.png<>uid://dorl4mueqf8b::::res://assets/gui/disabled_arrow.svg<>uid://pvyuojlopnxt::::res://assets/fonts/BigelowRules-Regular.ttf
+main_menu.tscn::PackedScene::6363690621657839558::1735581339::0::1::::<><>::res://game/scripts/main_menu.gd<>uid://jss7mogedm0r::::res://assets/gui/closed_book.png<>uid://pvyuojlopnxt::::res://assets/fonts/BigelowRules-Regular.ttf<>uid://b7l4hl71xmp2m::::res://game/scenes/gui/menu_button.tscn
+::res://game/scenes/gui/::1735577728
+dialogue.gd::GDScript::-1::1735580521::0::1::::<>RichTextLabel<>::
+dialogue.tscn::PackedScene::4695417098220889166::1735581340::0::1::::<><>::uid://bocbgm8fwpulf::::res://assets/fonts/Abel-Regular.ttf<>res://game/scenes/gui/dialogue.gd
+menu_button.tscn::PackedScene::4656945757155496174::1735581339::0::1::::<><>::res://game/scripts/gui/menu_button.gd<>uid://pvyuojlopnxt::::res://assets/fonts/BigelowRules-Regular.ttf<>uid://ckbmn5gvpq2a::::res://assets/gui/focus.png
 ::res://game/scripts/::1729873637
-main_game.gd::GDScript::-1::1729878367::0::1::::<>Control<>::
+main_game.gd::GDScript::-1::1735581187::0::1::::<>Control<>::
 main_menu.gd::GDScript::-1::1727466301::0::1::::<>Control<>::
 ::res://game/scripts/gui/::1727459338
 menu_button.gd::GDScript::-1::1727465880::0::1::::<>TextureButton<>::
@@ -125,6 +127,6 @@ menu_button.gd::GDScript::-1::1727465880::0::1::::<>TextureButton<>::
 inputs.gd::GDScript::-1::1724571611::0::1::::<>Node<>::
 route_builder.gd::GDScript::-1::1723800237::0::1::::<>Node<>::
 sound_manager.gd::GDScript::-1::1729878844::0::1::::<>Node<>::
-sound_manager.tscn::PackedScene::6861984075652183261::1729878867::0::1::::<><>::res://game/singletons/sound_manager.gd<>uid://bg17ygsblxpj3::::res://assets/sfx/ButtonClick.mp3
+sound_manager.tscn::PackedScene::6861984075652183261::1735581340::0::1::::<><>::res://game/singletons/sound_manager.gd<>uid://bg17ygsblxpj3::::res://assets/sfx/ButtonClick.mp3
 transition_screen.gd::GDScript::-1::1724570946::0::1::::<>CanvasLayer<>::
 transition_screen.tscn::PackedScene::5974740185796110681::1726490718::0::1::::<><>::res://game/singletons/transition_screen.gd
