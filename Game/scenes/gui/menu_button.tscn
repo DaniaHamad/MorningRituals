@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b7l4hl71xmp2m"]
 
-[ext_resource type="Script" path="res://game/scripts/gui/menu_button.gd" id="1_34vj5"]
+[ext_resource type="Script" path="res://game/scripts/gui/arrow_button.gd" id="1_34vj5"]
 [ext_resource type="FontFile" uid="uid://pvyuojlopnxt" path="res://assets/fonts/BigelowRules-Regular.ttf" id="1_k7tjv"]
 [ext_resource type="Texture2D" uid="uid://ckbmn5gvpq2a" path="res://assets/gui/focus.png" id="2_sedgw"]
 
@@ -14,6 +14,8 @@ offset_right = 1920.0
 offset_bottom = 100.0
 size_flags_horizontal = 3
 script = ExtResource("1_34vj5")
+color = Color(1, 1, 1, 1)
+focus_color = Color(0.635294, 0.72549, 0.756863, 1)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 1

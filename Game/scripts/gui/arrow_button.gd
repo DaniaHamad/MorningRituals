@@ -4,7 +4,11 @@ extends TextureButton
 @onready var right: TextureRect = %Right
 @onready var left: TextureRect = %Left
 
+@export var color: Color
+@export var focus_color: Color
+
 func _ready():
+	label.modulate = color
 	hide_arrows()
 
 func show_arrows():
@@ -18,12 +22,12 @@ func hide_arrows():
 
 func _on_focus_entered() -> void:
 	show_arrows()
-	label.modulate = Color("#A2B9C1")
+	label.modulate = focus_color
 
 
 func _on_focus_exited() -> void:
 	hide_arrows()
-	label.modulate = Color(1.0,1.0,1.0,1.0)
+	label.modulate = color
 
 
 func _on_mouse_entered() -> void:

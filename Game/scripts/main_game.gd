@@ -24,7 +24,7 @@ var chapter_index: int = 0
 @onready var sound_button: TextureButton = %SoundButton
 @onready var back_button: TextureButton = %BackButton
 @onready var next_button: TextureButton = %NextButton
-@onready var main_menu_button: Button = %MainMenuButton
+@onready var main_menu_button: TextureButton = %MainMenuButton
 @onready var animation_player: AnimationPlayer = %AnimationPlayer
 @onready var decisions: Control = %Decisions
 
@@ -91,6 +91,7 @@ func scene_controller(animate_text: bool = true):
 	elif not setted and decision == "end":
 		back_button.hide()
 		next_button.hide()
+		main_menu_button.grab_focus()
 		main_menu_button.show()
 
 

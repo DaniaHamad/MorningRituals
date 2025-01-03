@@ -1,3 +1,8 @@
 res://default_env.tres
+res://game/scenes/main_menu.tscn
+res://game/singletons/sound_manager.tscn
 res://game/scenes/main_game.tscn
-res://game/scripts/main_game.gd
+res://game/scenes/gui/dialogue.tscn
+res://game/scenes/gui/decision_button.tscn
+res://game/scenes/gui/menu_button.tscn
+res://game/scripts/gui/arrow_button.gd

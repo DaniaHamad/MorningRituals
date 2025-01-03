@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b75q3lv06hw8m"]
 
 [ext_resource type="FontFile" uid="uid://bocbgm8fwpulf" path="res://assets/fonts/Abel-Regular.ttf" id="1_54wii"]
-[ext_resource type="Script" path="res://game/scenes/gui/dialogue.gd" id="2_mc14t"]
+[ext_resource type="Script" path="res://game/scripts/gui/dialogue.gd" id="2_mc14t"]
 
 [node name="Dialogue" type="RichTextLabel"]
 anchors_preset = 15
