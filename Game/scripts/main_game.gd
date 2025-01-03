@@ -41,6 +41,7 @@ func read_file(chapter: String, section: String):
 
 
 func _ready():
+	main_menu_button.connect("pressed", Callable(self, "_on_main_menu_button_pressed"))
 	bgm_button.set_pressed_no_signal(SoundManager.bgm_state)
 	sound_button.set_pressed_no_signal(SoundManager.sound_state)
 	ui.show()
@@ -117,6 +118,7 @@ func _on_decision_pressed(decisionPicked, chapter):
 
 
 func _on_main_menu_button_pressed():
+	main_menu_button.disconnect("pressed", Callable(self, "_on_main_menu_button_pressed"))
 	RouteBuilder.resetRoute()
 	TransitionScreen.transition()
 	await TransitionScreen.on_transition_finished
